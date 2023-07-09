@@ -1,0 +1,38 @@
+@use './SharedComponent';
+.info{
+    flex-grow: 1;
+    width: 100%;
+    // background-color:var(--seconde-color);
+    background-image: url("../Assets/images/background_high-removebg-preview_auto_x2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .aboutus{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            h3{
+                @extend %shared-h3;
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: right;
+            }
+        }
+    }
+}

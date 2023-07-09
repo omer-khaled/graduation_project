@@ -6,9 +6,23 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "chart.js": "^4.2.1",
+    "firebase": "^9.23.0",
+    "framer-motion": "^10.12.17",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.3.1",
+    "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "react-simple-star-rating": "^5.1.7",
+    "react-slideshow-image": "^4.2.0",
+    "sweetalert2": "^11.7.3",
+    "sweetalert2-react-content": "^5.0.7",
+    "swiper": "^9.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
   }
 }

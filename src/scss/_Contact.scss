@@ -1,0 +1,42 @@
+@use './SharedComponent';
+.contact{
+    flex-grow: 1;
+    width: 100%;
+    // background-color:var(--seconde-color);
+    background-image: url("../Assets/images/background_high-removebg-preview_auto_x2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .contact-form{
+            @extend %form;
+            width: 40%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            h3{
+                @extend %shared-h3;
+                text-align: right
+            }
+            .control-anim{
+                @extend %controler;
+                input,textarea{
+                    direction: rtl;
+                }
+                textarea{
+                    height: 120px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+%shared-h3{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: calc(100% + 3px);
+        background-color: var(--brand-color);
+        height: 4px;
+        width: 60%;
+    }
+}
+%form{
+    background-color: #fff;
+    padding:10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+%controler{
+    margin: 0 !important;
+    width: 100%;
+    position: relative;
+    >span{
+        position: absolute;
+        padding: 2px;
+        top:-12px;
+        right: 10px;
+        background-color: #fff;
+        font-size: 13px;
+    }
+}
+%form-div{
+    @extend %form;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 35%;
+    i{
+        top: 15px;
+        left: 12px;
+        font-size: 18px;
+        position: absolute;
+        transition: 0.4s;
+        cursor: pointer;
+        &:hover{
+            color: red !important;
+        }
+    }
+    h3{
+        @extend %shared-h3;
+    }
+    .control-anim{
+        @extend %controler;
+        select,input,select>option{
+            text-align: right;
+            direction: rtl;
+        }
+        .form-select{
+            background-position: left 0.75rem center;
+        }
+    }
+    .btn-brand{
+        background-color: var(--brand-color);
+        border: 1px solid var(--brand-color);
+        color: #000;
+    }
+}
